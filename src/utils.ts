@@ -7,6 +7,40 @@ export const uuidGen = () => {
 
 export const projects = [
     {
+        title: "StudyBud",
+        availale: true,
+        projectType: "static",
+        role: "Full-stack engineer",
+        year: "2023",
+        excerpt: "StudyBud is a Django-powered platform inspired by Discord, where users can join topic-based rooms for discussions. This project helped me dive deep into Django development and expand my technical expertise.",
+        description: "StudyBud is a personal project developed using Python Django and an HTML template, designed as a Discord clone. The platform allows users to create and join rooms for discussions on mutual topics, fostering collaborative learning. This project was a hands-on exploration of Django development and served to enhance my understanding of the framework and its ecosystem.",
+        github: "https://github.com/nonso-uj/studybud-discord-clone",
+        liveLink: "/studybud",
+        images: [
+            "img/tagEnergy/1.png",
+            "img/tagEnergy/2.png",
+            "img/tagEnergy/3.png",
+            "img/tagEnergy/4.png",
+        ]
+    },
+    {
+        title: "Tag Energy Group Website",
+        availale: true,
+        projectType: "static",
+        role: "Full-stack engineer",
+        year: "2022",
+        excerpt: "Working on the Tag Energy Group website launched my professional web development journey. Using PHP Laravel, JavaScript, CSS, and HTML, I improved functionality and user experience while aligning with the client’s vision.",
+        description: "My first official client project was for Tag Energy Group, where I handled website maintenance and implemented new features. The project was built on a stack comprising PHP Laravel, JavaScript, CSS, and HTML. This experience was a significant milestone in my career, as I collaborated with the client to enhance the website's functionality and improve the user experience while ensuring the codebase remained clean and efficient.",
+        github: "",
+        liveLink: "https://tagenergygroup.net/",
+        images: [
+            "img/tagEnergy/1.png",
+            "img/tagEnergy/2.png",
+            "img/tagEnergy/3.png",
+            "img/tagEnergy/4.png",
+        ]
+    },
+    {
         title: "Tag Energy Group Website",
         availale: true,
         projectType: "static",

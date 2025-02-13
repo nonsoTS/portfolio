@@ -57,7 +57,7 @@ const HomePage = () => {
 
             <div className='w-full lg:w-1/2 h-full flex flex-col justify-center items-center'>
               <div className='w-11/12 lg:w-3/4 h-5/6'>
-                <LazyLoadImage  src="/img/hero.jpg" className='w-full h-full object-cover object-center rounded-xl' placeholderSrc='/img/preload.jpg' alt="" effect="blur" />
+                <LazyLoadImage  src="/img/hero.png" className='w-full h-full object-cover object-center rounded-xl' placeholderSrc='/img/preload.jpg' alt="" effect="blur" />
               </div>
             </div>
           </div>

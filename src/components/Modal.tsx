@@ -1,10 +1,11 @@
 import { AnimatePresence, motion } from "framer-motion"
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { FaCheck } from "react-icons/fa";
 import { FaXmark } from "react-icons/fa6";
 import { uuidGen } from "../utils";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import 'react-lazy-load-image-component/src/effects/blur.css';
+import axios from "axios";
 
 const Modal = ({ openModal, setOpenModal, currentProject }: any) => {
 //   const targetRef = useRef(null);
@@ -16,6 +17,29 @@ const Modal = ({ openModal, setOpenModal, currentProject }: any) => {
     if("something" === alive){
         setAlive('somesome');
     }
+
+    async function checkSiteStatus(url: any) {
+        try {
+          const response = await axios.get(url);
+          if (response.status === 200) {
+            console.log(`The site ${url} is up! Status code: ${response.status}`);
+          } else {
+            console.log(`The site ${url} responded with status: ${response.status}`);
+          }
+        } catch (error: any) {
+          if (error.response) {
+            console.log(`The site ${url} is down. Status code: ${error.response.status}`);
+          } else if (error.request) {
+            console.log(`The site ${url} is unreachable. No response received.`);
+          } else {
+            console.log(`An error occurred: ${error.message}`);
+          }
+        }
+    }
+
+    useEffect(() => {
+        checkSiteStatus('/studybud');
+    }, [])
 
   return (
     <AnimatePresence>
