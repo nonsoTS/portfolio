@@ -7,7 +7,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/studybud': {
-        target: 'https://flaskpg-dictionary.herokuapp.com',
+        target: 'https://studybud-discord-clone-2xnu.onrender.com',
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/studybud/, ''),
       },
