@@ -63,23 +63,70 @@ const HomePage = () => {
           </div>
         </div>
 
-        <div className='w-full min-h-svh flex flex-row items-stretch justify-center border-b border-[#c7c7c735] border-solid bg-black'>
-          <div className='w-11/12 lg:w-4/5 h-full flex flex-col lg:flex-row justify-center items-start gap-x-10 gap-y-10 py-20'>
-            <div className='w-full lg:w-1/2 h-full'>
-              <p className='text-center lg:text-left text-white text-3xl lg:text-7xl font_bold font-semibold'>ABOUT ME</p>
+        <div className='w-full'>
+          <div className='w-full min-h-[70vh] flex flex-row items-stretch justify-center border-b border-[#c7c7c735] border-solid bg-black'>
+            <div className='w-11/12 lg:w-4/5 h-full flex flex-col lg:flex-row justify-center items-start gap-x-10 gap-y-10 py-20'>
+              <div className='w-full lg:w-1/2 h-full'>
+                <p className='text-center lg:text-left text-white text-3xl lg:text-7xl font_bold font-semibold'>ABOUT ME</p>
+              </div>
+              <div className='w-full lg:w-1/2 h-full'>
+                <p className='text-white text-base lg:text-2xl font-semibold lg:font-normal font_regular'>
+                  I’m a software engineer based in Lagos, Nigeria, with a passion for creating impactful digital experiences.
+                </p>
+
+                <p className='text-secondary text-base font_regular my-4 lg:my-8'>
+                  Driven by problem-solving, I thrive in building user-centered applications that are both functional and intuitive. I'm always looking to learn new technologies and refine my skills. When I’m not coding, I enjoy football, photography, and exploring new creative pursuits.
+                </p>
+
+                <Link to={'/about'} className='mt-5'>
+                  <p className='text-center lg:text-left font-semibold text-special font_regular underline decoration-dotted hover:decoration-solid decoration-[#D3E97A] underline-offset-[6px]'>MORE ABOUT ME</p>
+                </Link>
+              </div>
             </div>
-            <div className='w-full lg:w-1/2 h-full'>
-              <p className='text-white text-base lg:text-2xl font-semibold lg:font-normal font_regular'>
-                I’m a software engineer based in Lagos, Nigeria, with a passion for creating impactful digital experiences.
-              </p>
-
-              <p className='text-secondary text-base font_regular my-4 lg:my-8'>
-                Driven by problem-solving, I thrive in building user-centered applications that are both functional and intuitive. I'm always looking to learn new technologies and refine my skills. When I’m not coding, I enjoy football, photography, and exploring new creative pursuits.
-              </p>
-
-              <Link to={'/about'} className='mt-5'>
-                <p className='text-center lg:text-left font-semibold text-special font_regular underline decoration-dotted hover:decoration-solid decoration-[#D3E97A] underline-offset-[6px]'>MORE ABOUT ME</p>
-              </Link>
+          </div>
+          <div className='w-11/12 h-full flex flex-col justify-center items-start gap-y-5 py-20 mx-auto'>
+            <div className='w-full h-full'>
+              <p className='text-center text-white text-3xl lg:text-5xl font_bold font-semibold'>Certifications</p>
+            </div>
+            <div className="slider w-full lg:w-4/5 !flex flex-row !items-center justify-stretch">
+              <div className="slide-track !flex flex-row !items-center justify-between gap-x-10">
+                <div className="slide">
+                  <img src="/img/certifications/coursera-python.png" alt="" />
+                </div>
+                <div className="slide">
+                  <img src="/img/certifications/coursera-backend.png" alt="" />
+                </div>
+                <div className="slide">
+                  <img src="/img/certifications/fcc-backend.png" alt="" />
+                </div>
+                <div className="slide">
+                  <img src="/img/certifications/fcc-dsa.png" alt="" />
+                </div>
+                <div className="slide">
+                  <img src="/img/certifications/fcc-python.png" alt="" />
+                </div>
+                <div className="slide">
+                  <img src="/img/certifications/udemy-aws.jpg" alt="" />
+                </div>
+                <div className="slide">
+                  <img src="/img/certifications/coursera-python.png" alt="" />
+                </div>
+                <div className="slide">
+                  <img src="/img/certifications/coursera-backend.png" alt="" />
+                </div>
+                <div className="slide">
+                  <img src="/img/certifications/fcc-backend.png" alt="" />
+                </div>
+                <div className="slide">
+                  <img src="/img/certifications/fcc-dsa.png" alt="" />
+                </div>
+                <div className="slide">
+                  <img src="/img/certifications/fcc-python.png" alt="" />
+                </div>
+                <div className="slide">
+                  <img src="/img/certifications/udemy-aws.jpg" alt="" />
+                </div>
+              </div>
             </div>
           </div>
         </div>
