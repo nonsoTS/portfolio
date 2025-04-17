@@ -20,7 +20,7 @@ const Navbar = () => {
           <Link to={'/projects'}>
             <p className='navbar text-secondary'>Projects</p>
           </Link>
-          <Link to={'mailto:nonso.udonne@gmail.com'}>
+          <Link to={'mailto:nonso.udonne@gmail.com'} target="_blank" rel="noopener">
             <p className='navbar text-secondary flex flex-row items-center justify-center'><span>Contact</span> <FiArrowUpRight size={30} /></p>
           </Link>
         </div>
@@ -68,7 +68,7 @@ const Navbar = () => {
                     
                     <hr className="border border-white w-full" />
 
-                    <Link to={'mailto:nonso.udonne@gmail.com'}>
+                    <Link to={'mailto:nonso.udonne@gmail.com'} target="_blank" rel="noopener">
                         <p className={`flex flex-row items-center justify-center ${currentLocaton.pathname === '/contact' && 'text-[#D3E97A]'}`}><span>Contact</span> <FiArrowUpRight size={30} /></p>
                     </Link>
 
