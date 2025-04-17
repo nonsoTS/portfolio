@@ -8,7 +8,6 @@ import Modal from "../components/Modal";
 import { projects, uuidGen } from "../utils";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
-import { MdArrowOutward } from "react-icons/md";
 
 const HomePage = () => {
   const [openModal, setOpenModal] = useState(false);
