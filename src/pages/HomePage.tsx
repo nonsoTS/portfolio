@@ -42,17 +42,8 @@ const HomePage = () => {
                 CHINONSO UDONNE.
               </p>
               <p className="text-secondary font_regular text-base">
-                A passionate software engineer based in Lagos, Nigeria,
-                currently working at{" "}
-                <a
-                  href="https://getdropp.com/"
-                  target="_blank"
-                  rel="noopener"
-                  className="text-[#06C167] underline underline-offset-2 decoration-1"
-                >
-                  Dropp ↗
-                </a>
-                . I specialize in building scalable applications, delivering
+                A passionate software engineer based in Lagos, Nigeria. I
+                specialize in building scalable applications, delivering
                 seamless user experiences, and tackling complex problems with
                 creative solutions.
               </p>
