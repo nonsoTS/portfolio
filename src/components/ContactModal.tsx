@@ -84,13 +84,13 @@ const ProfileForm = ({ className }: any) => {
     initialValues: {
       name: "",
       email: "",
-      subject: "",
+      // subject: "",
       message: "",
     },
     validationSchema: Yup.object({
       name: Yup.string().required("Required"),
       email: Yup.string().email("Invalid email address").required("Required"),
-      subject: Yup.string().required("Required"),
+      // subject: Yup.string().required("Required"),
       message: Yup.string().required("Required"),
     }),
     onSubmit: (values, { resetForm }) => {
@@ -180,7 +180,7 @@ const ProfileForm = ({ className }: any) => {
         </div>
       </div>
 
-      <div className="flex flex-col items-start justify-between w-full gap-y-2">
+      {/* <div className="flex flex-col items-start justify-between w-full gap-y-2">
         <Label
           htmlFor="subject"
           className="text-xs lg:text-sm font-semibold text-secondary"
@@ -202,7 +202,7 @@ const ProfileForm = ({ className }: any) => {
         {formik.touched.subject && formik.errors.subject ? (
           <div className="text-red-800 text-xs">{formik.errors.subject}</div>
         ) : null}
-      </div>
+      </div> */}
 
       <div className="flex flex-col items-start justify-between w-full gap-y-2 mt-2 lg:mt-0">
         <Label
@@ -255,7 +255,7 @@ const ProfileForm = ({ className }: any) => {
         </button>
       </div>
 
-      <Toaster className="!fixed !top-5 !right-5" position="top-right" />
+      <Toaster className="!fixed !top-5 !right-5 !text-black" position="top-right" />
     </div>
   );
 };
