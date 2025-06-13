@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import { useMediaQuery } from "@/hooks/use-media-query";
+// import { useMediaQuery } from "@/hooks/use-media-query";
 import {
   Dialog,
   DialogContent,
@@ -9,15 +9,15 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
-import {
-  Drawer,
-  DrawerContent,
-  DrawerDescription,
-  DrawerFooter,
-  DrawerHeader,
-  DrawerTitle,
-  DrawerTrigger,
-} from "@/components/ui/drawer";
+// import {
+//   Drawer,
+//   DrawerContent,
+//   DrawerDescription,
+//   DrawerFooter,
+//   DrawerHeader,
+//   DrawerTitle,
+//   DrawerTrigger,
+// } from "@/components/ui/drawer";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
@@ -30,9 +30,9 @@ import { Toaster } from "@/components/ui/sonner";
 
 const ContactModal = ({ children }: any) => {
   const [open, setOpen] = useState(false);
-  const isDesktop = useMediaQuery("(min-width: 768px)");
+  // const isDesktop = useMediaQuery("(min-width: 768px)");
 
-  if (isDesktop) {
+  // if (isDesktop) {
     return (
       <Dialog open={open} onOpenChange={setOpen}>
         <DialogTrigger asChild className="cursor-pointer">
@@ -55,26 +55,26 @@ const ContactModal = ({ children }: any) => {
         </DialogContent>
       </Dialog>
     );
-  }
+  // }
 
-  return (
-    <Drawer open={open} onOpenChange={setOpen}>
-      <DrawerTrigger asChild>{children}</DrawerTrigger>
-      <DrawerContent className="bg-neutral-900 text-secondary">
-        <DrawerHeader className="text-left">
-          <DrawerTitle>
-            <p className="text-3xl font-semibold font_bold">Let’s Connect</p>
-          </DrawerTitle>
-          <DrawerDescription className="text-xs">
-            Whether you have a question, need help with your project, or just
-            want to explore how we can work together, I’d love to hear from you.
-          </DrawerDescription>
-        </DrawerHeader>
-        <ProfileForm className="px-4" />
-        <DrawerFooter className="pt-2"></DrawerFooter>
-      </DrawerContent>
-    </Drawer>
-  );
+  // return (
+  //   <Drawer open={open} onOpenChange={setOpen}>
+  //     <DrawerTrigger asChild>{children}</DrawerTrigger>
+  //     <DrawerContent className="bg-neutral-900 text-secondary">
+  //       <DrawerHeader className="text-left">
+  //         <DrawerTitle>
+  //           <p className="text-3xl font-semibold font_bold">Let’s Connect</p>
+  //         </DrawerTitle>
+  //         <DrawerDescription className="text-xs">
+  //           Whether you have a question, need help with your project, or just
+  //           want to explore how we can work together, I’d love to hear from you.
+  //         </DrawerDescription>
+  //       </DrawerHeader>
+  //       <ProfileForm className="px-4" />
+  //       <DrawerFooter className="pt-2"></DrawerFooter>
+  //     </DrawerContent>
+  //   </Drawer>
+  // );
 };
 
 const ProfileForm = ({ className }: any) => {
