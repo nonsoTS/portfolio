@@ -41,11 +41,11 @@ const ContactModal = ({ children }: any) => {
         <DialogContent className="bg-neutral-900 text-secondary">
           <DialogHeader>
             <DialogTitle>
-              <p className="text-center text-5xl font-semibold font_bold">
+              <p className="text-center text-3xl lg:text-5xl font-semibold font_bold">
                 Let’s Connect
               </p>
             </DialogTitle>
-            <DialogDescription className="text-center">
+            <DialogDescription className="text-xs lg:text-base text-center">
               Whether you have a question, need help with your project, or just
               want to explore how we can work together, I’d love
               to hear from you
