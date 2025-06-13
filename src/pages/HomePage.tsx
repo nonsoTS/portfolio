@@ -5,9 +5,10 @@ import { FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import React, { useEffect, useState } from "react";
 import Modal from "../components/Modal";
-import { projects, uuidGen } from "../utils";
+import { certifications, projects, uuidGen } from "../utils";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
+import ContactModal from "@/components/ContactModal";
 
 const HomePage = () => {
   const [openModal, setOpenModal] = useState(false);
@@ -38,35 +39,24 @@ const HomePage = () => {
           <div className="h-full w-full lg:w-5/6 flex flex-col lg:flex-row items-center justify-center gap-x-10 gap-y-12">
             <div className="w-11/12 lg:w-1/2 h-full flex flex-col items-start justify-center gap-y-4">
               <p className="text-white text-3xl lg:text-6xl font_bold font-medium tracking-tighter">
-                HI, I AM <br />
+                HI, I’M <br />
                 CHINONSO UDONNE.
               </p>
               <p className="text-secondary font_regular text-base">
-                A passionate software engineer based in Lagos, Nigeria,
-                currently working at{" "}
-                <a
-                  href="https://getdropp.com/"
-                  target="_blank"
-                  rel="noopener"
-                  className="text-[#06C167] underline underline-offset-2 decoration-1"
-                >
-                  Dropp ↗
-                </a>
-                . I specialize in building scalable applications, delivering
-                seamless user experiences, and tackling complex problems with
-                creative solutions.
+                Full-Stack Engineer <span className="text-special">|</span>{" "}
+                Problem Solver <span className="text-special">|</span> Scalable
+                Systems Architect
+                <br />I build efficient, user-centric software with JavaScript,
+                Python, and AWS, turning complex challenges into elegant
+                solutions.
               </p>
 
               <div className="flex flex-row items-center justify-start gap-x-5">
-                <a
-                  href="mailto:nonso.udonne@gmail.com"
-                  target="_blank"
-                  rel="noopener"
-                >
+                <ContactModal>
                   <button className="flex flex-row items-center justify-center gap-x-2 lg:gap-x-5 bg-black text-sm font-semibold font_regular text-[#D3E97A] rounded-full p-3 hover:bg-[#D3E97A] border-2 border-[#D3E97A] hover:text-black duration-500 hover:pr-6">
                     <span>CONTACT ME</span> <FiArrowUpRight size={20} />
                   </button>
-                </a>
+                </ContactModal>
 
                 <Link
                   to={"https://github.com/nonso-uj"}
@@ -130,6 +120,7 @@ const HomePage = () => {
               </div>
             </div>
           </div>
+
           <div className="w-11/12 h-full flex flex-col justify-center items-start gap-y-5 py-20 mx-auto">
             <div className="w-full h-full">
               <p className="text-center text-white text-3xl lg:text-5xl font_bold font-semibold">
@@ -138,120 +129,13 @@ const HomePage = () => {
             </div>
             <div className="slider w-full lg:w-4/5 !flex flex-row !items-center justify-stretch">
               <div className="slide-track !flex flex-row !items-center justify-between gap-x-10">
-                <div className="slide">
-                  <a
-                    href="https://www.coursera.org/account/accomplishments/certificate/BZNN6S2825JL"
-                    target="_blank"
-                    rel="noopener"
-                  >
-                    <img src="/img/certifications/coursera-python.png" alt="" />
-                  </a>
-                </div>
-                <div className="slide">
-                  <a
-                    href="https://www.coursera.org/account/accomplishments/certificate/ABKF8TSLDDFT"
-                    target="_blank"
-                    rel="noopener"
-                  >
-                    <img
-                      src="/img/certifications/coursera-backend.png"
-                      alt=""
-                    />
-                  </a>
-                </div>
-                <div className="slide">
-                  <a
-                    href="https://www.freecodecamp.org/certification/r2_d2/back-end-development-and-apis"
-                    target="_blank"
-                    rel="noopener"
-                  >
-                    <img src="/img/certifications/fcc-backend.png" alt="" />
-                  </a>
-                </div>
-                <div className="slide">
-                  <a
-                    href="https://www.freecodecamp.org/certification/r2_d2/javascript-algorithms-and-data-structures"
-                    target="_blank"
-                    rel="noopener"
-                  >
-                    <img src="/img/certifications/fcc-dsa.png" alt="" />
-                  </a>
-                </div>
-                <div className="slide">
-                  <a
-                    href="https://www.freecodecamp.org/certification/r2_d2/scientific-computing-with-python-v7"
-                    target="_blank"
-                    rel="noopener"
-                  >
-                    <img src="/img/certifications/fcc-python.png" alt="" />
-                  </a>
-                </div>
-                <div className="slide">
-                  <a
-                    href="http://ude.my/UC-32b4306a-631d-45e4-bd54-97fba9fa3652"
-                    target="_blank"
-                    rel="noopener"
-                  >
-                    <img src="/img/certifications/udemy-aws.jpg" alt="" />
-                  </a>
-                </div>
-                <div className="slide">
-                  <a
-                    href="https://www.coursera.org/account/accomplishments/certificate/BZNN6S2825JL"
-                    target="_blank"
-                    rel="noopener"
-                  >
-                    <img src="/img/certifications/coursera-python.png" alt="" />
-                  </a>
-                </div>
-                <div className="slide">
-                  <a
-                    href="https://www.coursera.org/account/accomplishments/certificate/ABKF8TSLDDFT"
-                    target="_blank"
-                    rel="noopener"
-                  >
-                    <img
-                      src="/img/certifications/coursera-backend.png"
-                      alt=""
-                    />
-                  </a>
-                </div>
-                <div className="slide">
-                  <a
-                    href="https://www.freecodecamp.org/certification/r2_d2/back-end-development-and-apis"
-                    target="_blank"
-                    rel="noopener"
-                  >
-                    <img src="/img/certifications/fcc-backend.png" alt="" />
-                  </a>
-                </div>
-                <div className="slide">
-                  <a
-                    href="https://www.freecodecamp.org/certification/r2_d2/javascript-algorithms-and-data-structures"
-                    target="_blank"
-                    rel="noopener"
-                  >
-                    <img src="/img/certifications/fcc-dsa.png" alt="" />
-                  </a>
-                </div>
-                <div className="slide">
-                  <a
-                    href="https://www.freecodecamp.org/certification/r2_d2/scientific-computing-with-python-v7"
-                    target="_blank"
-                    rel="noopener"
-                  >
-                    <img src="/img/certifications/fcc-python.png" alt="" />
-                  </a>
-                </div>
-                <div className="slide">
-                  <a
-                    href="http://ude.my/UC-32b4306a-631d-45e4-bd54-97fba9fa3652"
-                    target="_blank"
-                    rel="noopener"
-                  >
-                    <img src="/img/certifications/udemy-aws.jpg" alt="" />
-                  </a>
-                </div>
+                {certifications?.map((cert) => (
+                  <div className="slide">
+                    <a href={cert?.link} target="_blank" rel="noopener">
+                      <img src={cert?.img} className="min-w-60 h-auto " alt="Certification image" />
+                    </a>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
@@ -322,18 +206,13 @@ const HomePage = () => {
             </p>
 
             <div className="w-full overflow-hidden">
-              <a
-                href="mailto:nonso.udonne@gmail.com"
-                target="_blank"
-                rel="noopener"
-                className="text-[1.8rem] lg:text-[6rem] font-semibold tracking-tighter text-white"
-              >
-                <p className="font_bold underline decoration-dotted hover:decoration-solid underline-offset-4 lg:underline-offset-[1rem] decoration-2 lg:decoration-8 leading-[1.3] duration-700">
-                  HELLO@
+              <ContactModal>
+                <p className="text-[1.8rem] lg:text-[6rem] font-semibold tracking-tighter text-white font_bold underline decoration-dotted hover:decoration-solid underline-offset-4 lg:underline-offset-[1rem] decoration-2 lg:decoration-8 leading-[1.3] duration-700">
+                  NONSO.
                   <br />
-                  NONSOUDONNE.COM
+                  UDONNE@GMAIL.COM
                 </p>
-              </a>
+              </ContactModal>
             </div>
 
             <div className="w-full py-10 flex flex-row items-center justify-center gap-x-5">

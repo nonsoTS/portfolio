@@ -6,40 +6,39 @@ export const uuidGen = () => {
 }
 
 export const projects = [
-    // {
-    //     title: "StudyBud",
-    //     availale: true,
-    //     projectType: "static",
-    //     role: "Full-stack engineer",
-    //     year: "2023",
-    //     excerpt: "StudyBud is a Django-powered platform inspired by Discord, where users can join topic-based rooms for discussions. This project helped me dive deep into Django development and expand my technical expertise.",
-    //     description: "StudyBud is a personal project developed using Python Django and an HTML template, designed as a Discord clone. The platform allows users to create and join rooms for discussions on mutual topics, fostering collaborative learning. This project was a hands-on exploration of Django development and served to enhance my understanding of the framework and its ecosystem.",
-    //     github: "https://github.com/nonso-uj/studybud-discord-clone",
-    //     liveLink: "/studybud",
-    //     images: [
-    //         "img/tagEnergy/1.png",
-    //         "img/tagEnergy/2.png",
-    //         "img/tagEnergy/3.png",
-    //         "img/tagEnergy/4.png",
-    //     ]
-    // },
-    // {
-    //     title: "Tag Energy Group Website",
-    //     availale: true,
-    //     projectType: "static",
-    //     role: "Full-stack engineer",
-    //     year: "2022",
-    //     excerpt: "Working on the Tag Energy Group website launched my professional web development journey. Using PHP Laravel, JavaScript, CSS, and HTML, I improved functionality and user experience while aligning with the client’s vision.",
-    //     description: "My first official client project was for Tag Energy Group, where I handled website maintenance and implemented new features. The project was built on a stack comprising PHP Laravel, JavaScript, CSS, and HTML. This experience was a significant milestone in my career, as I collaborated with the client to enhance the website's functionality and improve the user experience while ensuring the codebase remained clean and efficient.",
-    //     github: "",
-    //     liveLink: "https://tagenergygroup.net/",
-    //     images: [
-    //         "img/tagEnergy/1.png",
-    //         "img/tagEnergy/2.png",
-    //         "img/tagEnergy/3.png",
-    //         "img/tagEnergy/4.png",
-    //     ]
-    // },
+    {
+        title: "Chatrooms",
+        availale: true,
+        projectType: "static",
+        role: "Full-stack engineer",
+        year: "2025",
+        excerpt: "Chatrooms is a Dockerized Discord clone built with Django and PostgreSQL that enables real-time chatroom communication with user authentication and persistent message history.",
+        description: "Chatrooms is a full-stack web application that replicates Discord's core functionality, allowing users to create dedicated servers, join real-time chat channels, and communicate with other members. Built with Django for backend logic and PostgreSQL for data persistence, the application features a containerized architecture using Docker for consistent development and deployment. The project demonstrates user authentication systems, database management, environment configuration, and production-ready implementation with Gunicorn and Whitenoise for static file serving.",
+        github: "https://github.com/nonso-uj/chatrooms-discord-clone",
+        liveLink: "https://chatrooms-sp7c.onrender.com",
+        images: [
+            "img/chatrooms/1.png",
+            "img/chatrooms/2.png",
+            "img/chatrooms/3.png",
+            "img/chatrooms/4.png",
+        ]
+    },
+    {
+        title: "Secure Task Manager API",
+        availale: true,
+        projectType: "static",
+        role: "Full-stack engineer",
+        year: "2025",
+        excerpt: "Built a production-ready REST API with JWT authentication, Redis rate-limiting, and Jest testing—solving complex Windows-specific testing challenges. Implements industry best practices for security and scalability.",
+        description: "Developed a secure Node.js/Express API with JWT authentication, Redis rate limiting, and MongoDB integration, where I unexpectedly solved complex Windows-specific Jest testing challenges through innovative configurations like cross-env compatibility, dynamic app factory patterns, and experimental VM modules—reducing test failures by 90% while implementing industry best practices including Swagger documentation, OWASP security standards, and Artillery load-tested scalability for 1,000+ concurrent users.",
+        github: "https://all-apps-backend.onrender.com/",
+        liveLink: "https://nonso-react-auth-app.netlify.app/",
+        images: [
+            "img/task-app/1.png",
+            "img/task-app/2.png",
+            "img/task-app/3.png",
+        ]
+    },
     {
         title: "Tag Energy Group Website",
         availale: true,
@@ -145,4 +144,103 @@ export const projects = [
             "img/ems/5.png",
         ]
     },
+]
+
+export const certifications = [
+    {
+        link: "http://ude.my/UC-32b4306a-631d-45e4-bd54-97fba9fa3652",
+        img: "/img/certifications/udemy-aws.jpg"
+    },
+    {
+        link: "https://app-eu1.hubspot.com/academy/achievements/6pw25yn1/en/1/chinonso-udonne/seo",
+        img: "/img/certifications/hubspot-seo.png"
+    },
+    {
+        link: "https://www.coursera.org/account/accomplishments/certificate/BZNN6S2825JL",
+        img: "/img/certifications/coursera-python.png"
+    },
+    {
+        link: "https://www.coursera.org/account/accomplishments/certificate/ABKF8TSLDDFT",
+        img: "/img/certifications/coursera-backend.png"
+    },
+    {
+        link: "/img/certifications/zuri-backend.jpg",
+        img: "/img/certifications/zuri-backend.jpg"
+    },
+    {
+        link: "https://www.freecodecamp.org/certification/r2_d2/back-end-development-and-apis",
+        img: "/img/certifications/fcc-backend.png"
+    },
+    {
+        link: "https://www.freecodecamp.org/certification/r2_d2/javascript-algorithms-and-data-structures",
+        img: "/img/certifications/fcc-dsa.png"
+    },
+    {
+        link: "https://www.freecodecamp.org/certification/r2_d2/scientific-computing-with-python-v7",
+        img: "/img/certifications/fcc-python.png"
+    },
+    {
+        link: "http://ude.my/UC-32b4306a-631d-45e4-bd54-97fba9fa3652",
+        img: "/img/certifications/udemy-aws.jpg"
+    },
+    {
+        link: "https://app-eu1.hubspot.com/academy/achievements/6pw25yn1/en/1/chinonso-udonne/seo",
+        img: "/img/certifications/hubspot-seo.png"
+    },
+    {
+        link: "https://www.coursera.org/account/accomplishments/certificate/BZNN6S2825JL",
+        img: "/img/certifications/coursera-python.png"
+    },
+    {
+        link: "https://www.coursera.org/account/accomplishments/certificate/ABKF8TSLDDFT",
+        img: "/img/certifications/coursera-backend.png"
+    },
+    {
+        link: "/img/certifications/zuri-backend.jpg",
+        img: "/img/certifications/zuri-backend.jpg"
+    },
+    {
+        link: "https://www.freecodecamp.org/certification/r2_d2/back-end-development-and-apis",
+        img: "/img/certifications/fcc-backend.png"
+    },
+    {
+        link: "https://www.freecodecamp.org/certification/r2_d2/javascript-algorithms-and-data-structures",
+        img: "/img/certifications/fcc-dsa.png"
+    },
+    {
+        link: "https://www.freecodecamp.org/certification/r2_d2/scientific-computing-with-python-v7",
+        img: "/img/certifications/fcc-python.png"
+    },
+    {
+        link: "http://ude.my/UC-32b4306a-631d-45e4-bd54-97fba9fa3652",
+        img: "/img/certifications/udemy-aws.jpg"
+    },
+    {
+        link: "https://app-eu1.hubspot.com/academy/achievements/6pw25yn1/en/1/chinonso-udonne/seo",
+        img: "/img/certifications/hubspot-seo.png"
+    },
+    {
+        link: "https://www.coursera.org/account/accomplishments/certificate/BZNN6S2825JL",
+        img: "/img/certifications/coursera-python.png"
+    },
+    {
+        link: "https://www.coursera.org/account/accomplishments/certificate/ABKF8TSLDDFT",
+        img: "/img/certifications/coursera-backend.png"
+    },
+    {
+        link: "/img/certifications/zuri-backend.jpg",
+        img: "/img/certifications/zuri-backend.jpg"
+    },
+    {
+        link: "https://www.freecodecamp.org/certification/r2_d2/back-end-development-and-apis",
+        img: "/img/certifications/fcc-backend.png"
+    },
+    {
+        link: "https://www.freecodecamp.org/certification/r2_d2/javascript-algorithms-and-data-structures",
+        img: "/img/certifications/fcc-dsa.png"
+    },
+    {
+        link: "https://www.freecodecamp.org/certification/r2_d2/scientific-computing-with-python-v7",
+        img: "/img/certifications/fcc-python.png"
+    }
 ]

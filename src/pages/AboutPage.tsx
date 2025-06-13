@@ -6,11 +6,12 @@ import { IoMdMail } from "react-icons/io";
 import { MdArrowOutward } from "react-icons/md";
 import { useEffect } from "react";
 import { uuidGen } from "../utils";
+import ContactModal from "@/components/ContactModal";
 
 const experience = [
   {
-    startDate: "NOV 2024",
-    endDate: "Present",
+    startDate: "2024",
+    endDate: "APR 2025",
     position: "Software Engineer (Full-Stack)",
     company: "Dropp",
     website: "https://getdropp.com/",
@@ -48,7 +49,7 @@ const experience = [
     startDate: "2022",
     endDate: "AUG 2023",
     position: "Full-stack engineer",
-    company: "29mediagroup",
+    company: "JosueDigital",
     website: "https://josuedigital.com/",
     description:
       "Worked as a Full-Stack Developer at 29mediagroup, managing backend development with WordPress and creating responsive frontends for various websites. Provided hosting support and handled diverse IT tasks to ensure seamless operations.",
@@ -120,14 +121,11 @@ const AboutPage = () => {
               </div> */}
 
               <div className="w-full py-10 flex flex-row items-center justify-start gap-x-2 lg:gap-x-5">
-                <Link
-                  to={"mailto:nonso.udonne@gmail.com"}
-                  target="_blank"
-                  rel="noopener"
-                  className="inline w-fit h-fit p-3 rounded-full icon-outer duration-500"
-                >
-                  <IoMdMail size={25} className="icon-inner duration-500" />
-                </Link>
+                <ContactModal>
+                  <span className="inline w-fit h-fit p-3 rounded-full icon-outer duration-500">
+                    <IoMdMail size={25} className="icon-inner duration-500" />
+                  </span>
+                </ContactModal>
                 <Link
                   to={"https://www.linkedin.com/in/nonso-uj/"}
                   target="_blank"
@@ -176,13 +174,12 @@ const AboutPage = () => {
               </p>
 
               <p>
-                Currently, I’m a Full-Stack Engineer at Dropp, where I’ve had
-                the opportunity to implement key features, optimize performance,
-                and reduce downtime occurrences—all while collaborating with a
-                team that values innovation and user-first design. I'm also
-                diving into DevOps practices and strengthening my knowledge of
-                data structures and algorithms to enhance my technical
-                expertise.
+                In my recent work, I’ve implemented key features, optimized
+                system performance, and reduced downtime—all while collaborating
+                with teams that value innovation and user-first design. I'm also
+                deepening my expertise in DevOps practices and strengthening my
+                knowledge of data structures and algorithms to expand my
+                technical toolkit.
               </p>
 
               <p>
@@ -196,27 +193,18 @@ const AboutPage = () => {
               </p>
 
               <p>
-                Outside of coding, I find joy in football, movies, and music,
-                which provide a refreshing balance to the demands of
-                engineering. My ultimate goal is to become a highly capable
-                engineer and eventually transition into data science, where I
-                can further apply my problem-solving skills to analyze and
-                interpret complex datasets.
+                Outside of coding, I enjoy football, movies, and music, which
+                provide a refreshing balance to technical work. My long-term
+                goal is to transition into data science, where I can apply my
+                problem-solving skills to analyze and interpret complex
+                datasets.
               </p>
 
               <p>
-                I’m an advocate for collaboration, thoughtful design, and
-                innovation. I believe that great software is the result of a
-                well-rounded approach that blends technical excellence with a
-                deep understanding of user needs.
-              </p>
-
-              <p>
-                In my spare time, you’ll often find me playing football,
-                listening to music, or enjoying a good movie. When I’m not
-                solving technical puzzles, I’m likely exploring ways to improve
-                my craft and expand my horizons in the ever-evolving tech
-                landscape.
+                I believe great software comes from a blend of technical
+                excellence, thoughtful design, and deep user understanding.
+                Collaboration and innovation are at the heart of how I approach
+                challenges—both in engineering and beyond.
               </p>
             </div>
 
@@ -243,7 +231,7 @@ const AboutPage = () => {
                         href={item.website}
                         target="_blank"
                         rel="noopener"
-                        className="text-[#06C167] underline underline-offset-2 decoration-1"
+                        className="text-special underline underline-offset-2 decoration-1"
                       >
                         {item.company}↗
                       </a>
