@@ -256,7 +256,7 @@ const AboutPage = () => {
               ))}
 
               <Link
-                to={"/pdf/Udonne_Chinonso_Backend_Developer_Resume.pdf"}
+                to={"/pdf/Udonne_Chinonso_Software_Developer_Resume.pdf"}
                 target="_blank"
                 className="mt-20 lg:mt-8 block !border-none"
               >

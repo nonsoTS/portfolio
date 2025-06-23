@@ -24,6 +24,23 @@ export const projects = [
         ]
     },
     {
+        title: "Guestic",
+        availale: true,
+        projectType: "static",
+        role: "Frontend engineer",
+        year: "2024",
+        excerpt: "Enhanced a React-based rental property platform with responsive UI components, optimized booking flows, and integrated APIs for a seamless user experience.",
+        description: "As a Frontend Engineer, I developed interactive React components, optimized performance, and integrated RESTful APIs to deliver a seamless booking experience for a Node.js-based short-term rental platform, while collaborating closely with backend and design teams.",
+        github: "",
+        liveLink: "https://www.guestic.ca/",
+        images: [
+            "img/guestic/1.png",
+            "img/guestic/2.png",
+            "img/guestic/3.png",
+            "img/guestic/4.png",
+        ]
+    },
+    {
         title: "Secure Task Manager API",
         availale: true,
         projectType: "static",
@@ -114,10 +131,11 @@ export const projects = [
         projectType: "static",
         role: "Frontend engineer",
         year: "2024",
-        excerpt: "Developing The Apinke Afolabi's portfolio site was an exploration of React and Framer Motion, blending creativity with technical implementation. I handled everything from development to hosting setup.",
-        description: "I built The Apinke Afolabi's portfolio site from scratch using React and Framer Motion, leveraging the project as an opportunity to explore dynamic animations and interactive design. Beyond development, I also set up the hosting, ensuring a smooth deployment process.",
+        excerpt: "Developing The Apinke Afolabi's portfolio site was an exploration of Astro, React and Framer Motion, blending creativity with technical implementation. I handled everything from development to hosting setup.",
+        description: "I built The Apinke Afolabi's portfolio site from scratch using Astro, React and Framer Motion, leveraging the project as an opportunity to explore dynamic animations and interactive design. Beyond development, I also set up the hosting, ensuring a smooth deployment process.",
         github: "https://github.com/nonso-uj/apinke",
-        liveLink: "https://theapinkeafolabi.com/",
+        liveLink: "https://ini-cms.netlify.app/",
+        // liveLink: "https://theapinkeafolabi.com/",
         images: [
             "img/apinke/1.png",
             "img/apinke/2.png",
