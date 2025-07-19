@@ -26,35 +26,33 @@ import { useFormik } from "formik";
 import * as Yup from "yup";
 import * as emailjs from "@emailjs/browser";
 import { toast } from "sonner";
-import { Toaster } from "@/components/ui/sonner";
 
 const ContactModal = ({ children }: any) => {
   const [open, setOpen] = useState(false);
   // const isDesktop = useMediaQuery("(min-width: 768px)");
 
   // if (isDesktop) {
-    return (
-      <Dialog open={open} onOpenChange={setOpen}>
-        <DialogTrigger asChild className="cursor-pointer">
-          {children}
-        </DialogTrigger>
-        <DialogContent className="bg-neutral-900 text-secondary">
-          <DialogHeader>
-            <DialogTitle>
-              <p className="text-center text-3xl lg:text-5xl font-semibold font_bold">
-                Let’s Connect
-              </p>
-            </DialogTitle>
-            <DialogDescription className="text-xs lg:text-base text-center">
-              Whether you have a question, need help with your project, or just
-              want to explore how we can work together, I’d love
-              to hear from you
-            </DialogDescription>
-          </DialogHeader>
-          <ProfileForm />
-        </DialogContent>
-      </Dialog>
-    );
+  return (
+    <Dialog open={open} onOpenChange={setOpen}>
+      <DialogTrigger asChild className="cursor-pointer">
+        {children}
+      </DialogTrigger>
+      <DialogContent className="bg-neutral-900 text-secondary">
+        <DialogHeader>
+          <DialogTitle>
+            <p className="text-center text-3xl lg:text-5xl font-semibold font_bold">
+              Let’s Connect
+            </p>
+          </DialogTitle>
+          <DialogDescription className="text-xs lg:text-base text-center">
+            Whether you have a question, need help with your project, or just
+            want to explore how we can work together, I’d love to hear from you
+          </DialogDescription>
+        </DialogHeader>
+        <ProfileForm />
+      </DialogContent>
+    </Dialog>
+  );
   // }
 
   // return (
@@ -109,14 +107,17 @@ const ProfileForm = ({ className }: any) => {
         (response: any) => {
           toast.success("Success!!", {
             description: "Your message has been sent. " + response?.text,
+            position: "top-right",
           });
           resetForm();
           setLoading(false);
         },
+        // @typescript-eslint/no-explicit-any
         (error: any) => {
           toast.error("Uh oh! Something went wrong.", {
             description:
               "Please check your connection and try again!" + error?.text,
+            position: "top-right",
           });
           setLoading(false);
         }
@@ -254,8 +255,6 @@ const ProfileForm = ({ className }: any) => {
           )}
         </button>
       </div>
-
-      <Toaster className="!fixed !top-5 !right-5 !text-black" position="top-right" />
     </div>
   );
 };

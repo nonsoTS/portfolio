@@ -11,18 +11,5 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  server: {
-    proxy: {
-      "/studybud": {
-        target: "https://flaskpg-dictionary.herokuapp.com",
-        changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/studybud/, ""),
-      },
-      "/topup": {
-        target: "https://topupng-fpl-site.onrender.com",
-        changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/topup/, ""),
-      },
-    },
-  },
+  server: {},
 });

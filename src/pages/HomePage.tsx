@@ -132,7 +132,11 @@ const HomePage = () => {
                 {certifications?.map((cert) => (
                   <div className="slide">
                     <a href={cert?.link} target="_blank" rel="noopener">
-                      <img src={cert?.img} className="min-w-60 h-auto " alt="Certification image" />
+                      <img
+                        src={cert?.img}
+                        className="min-w-60 h-auto "
+                        alt="Certification image"
+                      />
                     </a>
                   </div>
                 ))}
@@ -191,7 +195,7 @@ const HomePage = () => {
 
             <div className="w-full p-10 flex flex-row items-center justify-center">
               <Link to={"/projects"} className="inline">
-                <button className="flex flex-row items-center justify-center gap-x-5 bg-black text-sm font-semibold font_regular text-[#D3E97A] rounded-full p-3 hover:bg-[#D3E97A] border-2 border-[#D3E97A] hover:text-black duration-300">
+                <button className="flex flex-row items-center justify-center gap-x-5 bg-black text-sm font-semibold font_regular text-[#D3E97A] rounded-full p-3 hover:bg-[#D3E97A] border-2 border-[#D3E97A] hover:text-black duration-300 cursor-pointer">
                   SEE MORE PROJECTS <FiArrowUpRight size={20} />
                 </button>
               </Link>
