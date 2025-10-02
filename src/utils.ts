@@ -16,7 +16,7 @@ export const projects = [
       "Archfolio is a full-stack, multi-tenant portfolio builder built with Next.js 15, Payload CMS 3.0, and Tailwind CSS. It enables users to dynamically generate responsive portfolio sites from structured CMS data, with secure authentication, Cloudinary media handling, and a customizable dashboard UI optimized for design creatives.",
     description:
       "Archfolio is a full-stack portfolio-building platform tailored for creatives. It allows users manage their content through a custom dashboard, and instantly generate responsive portfolio websites, all without writing code. The platform is built with Next.js 15, Payload CMS 3.0, and Tailwind CSS, featuring a multi-tenant backend, secure authentication, Cloudinary integration for media uploads, and a smooth, mobile-optimized frontend experience. Archfolio emphasizes usability, clean design, and developer-grade scalability, making it as valuable to end-users as it is impressive to recruiters.",
-    github: "https://github.com/nonso-uj/archfolio",
+    github: "https://github.com/nonsoTS/archfolio",
     liveLink: "https://archfolio-two.vercel.app",
     images: [
       "img/archfolio/1.png",
@@ -39,13 +39,13 @@ export const projects = [
       "Chatrooms is a Dockerized Discord clone built with Django and PostgreSQL that enables real-time chatroom communication with user authentication and persistent message history.",
     description:
       "Chatrooms is a full-stack web application that replicates Discord's core functionality, allowing users to create dedicated servers, join real-time chat channels, and communicate with other members. Built with Django for backend logic and PostgreSQL for data persistence, the application features a containerized architecture using Docker for consistent development and deployment. The project demonstrates user authentication systems, database management, environment configuration, and production-ready implementation with Gunicorn and Whitenoise for static file serving.",
-    github: "https://github.com/nonso-uj/chatrooms-discord-clone",
+    github: "https://github.com/nonsoTS/chatrooms-discord-clone",
     liveLink: "https://chatrooms-sp7c.onrender.com",
     images: [
+      "img/chatrooms/4.png",
       "img/chatrooms/1.png",
       "img/chatrooms/2.png",
       "img/chatrooms/3.png",
-      "img/chatrooms/4.png",
     ],
   },
   {
@@ -168,7 +168,7 @@ export const projects = [
       "Developing The Apinke Afolabi's portfolio site was an exploration of Astro, React and Framer Motion, blending creativity with technical implementation. I handled everything from development to hosting setup.",
     description:
       "I built The Apinke Afolabi's portfolio site from scratch using Astro, React and Framer Motion, leveraging the project as an opportunity to explore dynamic animations and interactive design. Beyond development, I also set up the hosting, ensuring a smooth deployment process.",
-    github: "https://github.com/nonso-uj/apinke",
+    github: "https://github.com/nonsoTS/apinke",
     liveLink: "https://ini-cms.netlify.app/",
     // liveLink: "https://theapinkeafolabi.com/",
     images: [
@@ -189,7 +189,7 @@ export const projects = [
       "Building the EMS e-commerce website was a deep dive into core web technologies. Using only HTML, CSS, and Vanilla JavaScript, I created a responsive site with a shopping cart and payment integration.",
     description:
       "As part of a course in 2022, I developed a fully responsive e-commerce website using only raw HTML, CSS, and Vanilla JavaScript. The project featured a shopping cart and payment integration, demonstrating my ability to build complex functionality without relying on frameworks or libraries.",
-    github: "https://github.com/nonso-uj/ems",
+    github: "https://github.com/nonsoTS/ems",
     liveLink: "https://nonso-uj.github.io/ems/",
     images: [
       "img/ems/1.png",
@@ -209,6 +209,10 @@ export const certifications = [
   {
     link: "https://app-eu1.hubspot.com/academy/achievements/6pw25yn1/en/1/chinonso-udonne/seo",
     img: "/img/certifications/hubspot-seo.png",
+  },
+  {
+    link: "https://www.credly.com/badges/8e2cff18-a89b-4a4f-8000-544dd51edca3/public_url",
+    img: "/img/certifications/aws-gen-ai.png",
   },
   {
     link: "https://www.coursera.org/account/accomplishments/certificate/BZNN6S2825JL",

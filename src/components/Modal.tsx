@@ -47,7 +47,7 @@ const Modal = ({ openModal, setOpenModal, currentProject }: any) => {
             <motion.div key={'animateItem'} initial={{height: 0, opacity: 0}} animate={{ height: "100vh", opacity: 1 }} exit={{height: 0, opacity: 0}} transition={{ type: "spring", duration: 1, ease: "easeOut" }} className={`fixed top-0 bottom-0 left-0 right-0 z-50 bg-gray-600 w-screen overflow-y-scroll`}>
                 <div className="relative bg-gradient-to-b from-neutral-700 to-neutral-900 w-full" style={{ height: '800nvh', minHeight: '800nvh' }}>
                     <div className={`sticky top-0 w-full h-auto lg:h-svh flex flex-col justify-start items-stretch overflow-x-hidden`}>
-                        <div className='w-full lg:w-5/6 mx-auto flex flex-row justify-between items-center font_regular py-5 px-5 lg:py-10 lg:px-0'>
+                        <div className='relative w-full lg:w-5/6 mx-auto flex flex-row justify-between items-center font_regular py-5 px-5 lg:py-10 lg:px-0'>
                             <div className={`w-full ${currentProject?.github ? 'lg:w-3/4' : 'lg:w-1/2'} flex flex-col lg:flex-row justify-between items-start lg:items-center gap-y-3`}>
                                 <p className='text-base lg:text-xl font-semibold text-white'>{currentProject.title}</p>
 
@@ -73,15 +73,15 @@ const Modal = ({ openModal, setOpenModal, currentProject }: any) => {
                                 )}
                             </div>
 
-                            <p className='hidden lg:block text-base lg:text-xl font-semibold text-[#D3E97A] hover:text-[#dae99c] uppercase cursor-pointer' onClick={() => setOpenModal(false)}>close</p>
+                            <p className='hidden text-base lg:text-xl font-semibold text-[#D3E97A] hover:text-[#dae99c] uppercase cursor-pointer' onClick={() => setOpenModal(false)}>close</p>
 
-                            <p className='lg:hidden text-base lg:text-xl font-semibold w-fit h-fit bg-black rounded-full p-2' onClick={() => setOpenModal(false)}>
+                            <p className='lg:fixed lg:right-28 lg:z-50 text-base lg:text-4xl font-semibold w-fit h-fit bg-black rounded-full p-2 lg:p-4 cursor-pointer hover:scale-110 transition-all' onClick={() => setOpenModal(false)}>
                                 <FaXmark className="text-white" size={20} />
                             </p>
                         </div>
 
-                        <div className='grow w-screen h-full flex flex-col lg:flex-row items-center justify-start gap-x-10 gap-y-10'>
-                            <div className='shrink-0 h-auto lg:h-5/6 w-full lg:w-1/2 text-white font_regular px-5 lg:px-14 my-auto flex flex-col justify-between gap-y-8 lg:gap-y-0'>
+                        <div className='grow w-screen h-full flex flex-col items-center justify-start lg:gap-y-20 gap-y-10'>
+                            <div className='shrink-0 h-auto w-full text-white font_regular px-5 lg:px-14 my-auto flex flex-col justify-between lg:items-center gap-y-8 lg:gap-y-0'>
                                 <div className='w-full lg:w-4/5'>
                                     <p className='font-semibold text-xl'>{currentProject.description}</p>
                                 </div>
@@ -103,11 +103,11 @@ const Modal = ({ openModal, setOpenModal, currentProject }: any) => {
                                 </div>
                             </div>
                             
-                            <div className='relative w-full lg:w-1/2 h-auto lg:h-5/6 px-2 py-10 lg:p-0'>
-                                <motion.div className='lg:absolute lg:top-0 w-full lg:w-auto h-full flex flex-col lg:flex-row items-center justify-start gap-x-10 gap-y-10'>
+                            <div className='relative w-full h-auto px-2 py-10 lg:px-10'>
+                                <motion.div className='w-full h-full flex flex-col items-center justify-center gap-y-10'>
                                     {currentProject.images.map((img: any) => (
-                                    <div key={uuidGen()} className='h-auto lg:h-5/6 w-full lg:w-[40vw] overflow-hidden'>
-                                        <LazyLoadImage src={img} className='h-full w-full object-cover object-center' placeholderSrc="img/preload2.jpg" alt="projectImg" effect="blur" />
+                                    <div key={uuidGen()} className='h-auto w-full overflow-hidden'>
+                                        <LazyLoadImage src={img} className='h-full w-full lg:h-[90vh] lg:w-[90vw]  object-cover object-center' placeholderSrc="img/preload2.jpg" alt="projectImg" effect="blur" />
                                     </div>
                                     ))}
                                 </motion.div>

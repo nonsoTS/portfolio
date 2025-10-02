@@ -16,11 +16,11 @@ const experience = [
     company: "Dropp",
     website: "https://getdropp.com/",
     description:
-      "As a Full-Stack Software Engineer at Dropp, I collaborate closely with the engineering team to build and maintain scalable applications. I develop backend features using Node.js, Express, MongoDB, and Mongoose, while leveraging React and Redux on the frontend to deliver seamless, responsive user interfaces. I actively contribute to product development by implementing key features and optimizing performance, ensuring the platform meets both user and business needs.",
+      "As a Full-Stack Software Engineer at Dropp, I collaborated closely with the engineering team to build and maintain scalable applications. I develop backend features using Node.js, Express, MongoDB, and Mongoose, while leveraging React and Redux on the frontend to deliver seamless, responsive user interfaces. I actively contributed to product development by implementing key features and optimizing performance, ensuring the platform meets both user and business needs.",
     skills: [
+      "typescript",
       "node.js",
       "mongoDB",
-      "javascript",
       "mongoose",
       "express",
       "react",
@@ -36,9 +36,9 @@ const experience = [
     description:
       "I worked as part of the engineering team, contributing to both backend and frontend development. On the backend, I used Node.js, Express, MongoDB, and Mongoose to implement various features, while on the frontend, I worked with React and Redux to enhance user experience and collaborate with the product team on feature development.",
     skills: [
+      "typescript",
       "node.js",
       "mongoDB",
-      "javascript",
       "mongoose",
       "express",
       "react",
@@ -100,11 +100,11 @@ const AboutPage = () => {
                   Chinonso Udonne
                 </p>
                 <p className="text-lg lg:text-xl text-white/80 font-semibold font_bold">
-                  Software Engineer
+                  TypeScript Engineer
                 </p>
                 <p className="text-sm lg:text-base text-white/60 font_regular">
-                  I create accessible, visually refined digital experiences for
-                  the web.
+                  TypeScript Engineer specializing in scalable cloud
+                  architectures and ML-powered applications.
                 </p>
               </div>
 
@@ -134,7 +134,7 @@ const AboutPage = () => {
                   <FaLinkedinIn size={25} className="icon-inner duration-500" />
                 </Link>
                 <Link
-                  to={"https://github.com/nonso-uj"}
+                  to={"https://github.com/nonsoTS"}
                   target="_blank"
                   className="inline w-fit h-fit p-3 rounded-full icon-outer duration-500"
                 >
@@ -164,47 +164,55 @@ const AboutPage = () => {
               className="w-full space-y-6 lg:space-y-10 text-base lg:text-lg font_regular text-secondary"
             >
               <p>
-                I’m a full-stack engineer passionate about building scalable,
-                efficient, and user-centered applications. With a strong
-                foundation in JavaScript, Python, Django, React, Node.js, AWS,
-                and more, I craft solutions that are not only robust but also
-                intuitive to use. Problem-solving is at the core of my work, and
-                I thrive on tackling complex challenges to create impactful
-                software.
+                I'm a TypeScript engineer specializing in cloud-native
+                architectures and AI-powered applications. I build production
+                systems using modern TypeScript, AWS infrastructure, and machine
+                learning capabilities to deliver scalable, performant solutions
+                that solve real business problems.
               </p>
 
               <p>
-                In my recent work, I’ve implemented key features, optimized
-                system performance, and reduced downtime—all while collaborating
-                with teams that value innovation and user-first design. I'm also
-                deepening my expertise in DevOps practices and strengthening my
-                knowledge of data structures and algorithms to expand my
-                technical toolkit.
+                My expertise spans the full development lifecycle, from
+                architecting type-safe applications with React and Node.js, to
+                designing robust AWS cloud infrastructure, to integrating
+                generative AI features into production environments. I'm{" "}
+                <b>AWS: Generative AI Practitioner certified</b> and
+                actively work with MLOps patterns to bring AI capabilities to
+                scale.
               </p>
 
               <p>
-                My journey into software engineering started with a love for
-                math and a curiosity for solving problems. After purchasing my
-                first programming course, I was hooked, and that passion has
-                driven me to constantly learn and improve. Whether it’s
-                exploring new technologies, collaborating with others, or
-                delivering polished features, I’m always eager to push
-                boundaries and find creative solutions.
+                In my work, I focus on delivering measurable impact:
+                implementing critical features, optimizing system performance,
+                and building infrastructure that reduces downtime while
+                maintaining developer velocity. I approach every project with a
+                deep understanding of algorithms and data structures, ensuring
+                solutions are not just functional but fundamentally sound.
               </p>
 
               <p>
-                Outside of coding, I enjoy football, movies, and music, which
-                provide a refreshing balance to technical work. My long-term
-                goal is to transition into data science, where I can apply my
-                problem-solving skills to analyze and interpret complex
-                datasets.
+                My technical foundation started with a fascination for
+                mathematics and problem-solving, a curiosity that led me from my
+                first programming course to building complex distributed
+                systems. That drive to understand how things work at a
+                fundamental level continues to shape how I architect solutions
+                today.
               </p>
 
               <p>
-                I believe great software comes from a blend of technical
-                excellence, thoughtful design, and deep user understanding.
-                Collaboration and innovation are at the heart of how I approach
-                challenges—both in engineering and beyond.
+                I share insights from building these systems through technical
+                writing and open-source contributions, covering topics from
+                advanced TypeScript patterns to AWS architecture decisions to
+                practical MLOps implementations. I believe the best engineering
+                comes from combining technical depth with clear communication
+                and collaborative problem-solving.
+              </p>
+
+              <p>
+                When I'm not coding, you'll find me following football,
+                exploring new music, or at the cinema. These interests remind me
+                that great software, like great art, requires both technical
+                craft and creative vision.
               </p>
             </div>
 

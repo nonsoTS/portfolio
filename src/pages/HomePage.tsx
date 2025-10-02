@@ -43,12 +43,12 @@ const HomePage = () => {
                 CHINONSO UDONNE.
               </p>
               <p className="text-secondary font_regular text-base">
-                Full-Stack Engineer <span className="text-special">|</span>{" "}
-                Problem Solver <span className="text-special">|</span> Scalable
-                Systems Architect
-                <br />I build efficient, user-centric software with JavaScript,
-                Python, and AWS, turning complex challenges into elegant
-                solutions.
+                TypeScript Engineer <span className="text-special">|</span>{" "}
+                Cloud Architect <span className="text-special">|</span> MLOps
+                Specialist
+                <br />I build production systems that leverage modern
+                TypeScript, AWS infrastructure, and machine learning
+                capabilities to solve complex engineering challenges.
               </p>
 
               <div className="flex flex-row items-center justify-start gap-x-5">
@@ -59,7 +59,7 @@ const HomePage = () => {
                 </ContactModal>
 
                 <Link
-                  to={"https://github.com/nonso-uj"}
+                  to={"https://github.com/nonsoTS"}
                   target="_blank"
                   className="inline w-fit h-fit p-3 rounded-full icon-outer duration-500"
                 >
@@ -100,16 +100,15 @@ const HomePage = () => {
               </div>
               <div className="w-full lg:w-1/2 h-full">
                 <p className="text-white text-base lg:text-2xl font-semibold lg:font-normal font_regular">
-                  I’m a software engineer based in Lagos, Nigeria, with a
-                  passion for creating impactful digital experiences.
+                  I'm a TypeScript engineer specializing in cloud-native
+                  architectures and AI-powered applications.
                 </p>
 
                 <p className="text-secondary text-base font_regular my-4 lg:my-8">
-                  Driven by problem-solving, I thrive in building user-centered
-                  applications that are both functional and intuitive. I'm
-                  always looking to learn new technologies and refine my skills.
-                  When I’m not coding, I enjoy football, photography, and
-                  exploring new creative pursuits.
+                  I build production systems using modern TypeScript, AWS
+                  infrastructure, and machine learning capabilities to deliver
+                  scalable, performant solutions that solve real business
+                  problems.
                 </p>
 
                 <Link to={"/about"} className="mt-5">
@@ -179,7 +178,7 @@ const HomePage = () => {
                         </p>
                       </div>
                     </div>
-                    <div className="order-1 lg:order-2 h-full w-full lg:w-1/2 rounded-lg bg-[#1A1A1A] flex flex-col items-center justify-center p-5 lg:p-14">
+                    <div className="order-1 lg:order-2 h-full w-full lg:w-1/2 rounded-lg bg-[#1A1A1A] flex flex-col items-center justify-center p-5 lg:p-14 duration-500">
                       <LazyLoadImage
                         src={item.images[0]}
                         className="w-full h-auto object-cover object-center rounded-lg hover:scale-110 duration-500"
@@ -228,7 +227,7 @@ const HomePage = () => {
                 <FaLinkedinIn size={25} className="icon-inner duration-500" />
               </Link>
               <Link
-                to={"https://github.com/nonso-uj"}
+                to={"https://github.com/nonsoTS"}
                 target="_blank"
                 className="inline w-fit h-fit p-3 rounded-full icon-outer duration-500"
               >
