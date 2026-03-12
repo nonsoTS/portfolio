@@ -83,7 +83,7 @@ const Modal = ({ openModal, setOpenModal, currentProject }: any) => {
                         <div className='grow w-screen h-full flex flex-col items-center justify-start lg:gap-y-20 gap-y-10'>
                             <div className='shrink-0 h-auto w-full text-white font_regular px-5 lg:px-14 my-auto flex flex-col justify-between lg:items-center gap-y-8 lg:gap-y-0'>
                                 <div className='w-full lg:w-4/5'>
-                                    <p className='font-semibold text-xl'>{currentProject.description}</p>
+                                    <p className='font-semibold text-xl whitespace-pre-line'>{currentProject.description}</p>
                                 </div>
                                 
                                 <div className='w-full lg:w-4/5 font-medium text-lg lg:text-2xl'>

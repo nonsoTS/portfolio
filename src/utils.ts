@@ -30,17 +30,16 @@ export const projects = [
     ],
   },
   {
-    title: "Chatrooms",
+    title: "DiscussAI",
     availale: true,
     projectType: "static",
     role: "Full-stack engineer",
     year: "2025",
     excerpt:
-      "Chatrooms is a Dockerized Discord clone built with Django and PostgreSQL that enables real-time chatroom communication with user authentication and persistent message history.",
-    description:
-      "Chatrooms is a full-stack web application that replicates Discord's core functionality, allowing users to create dedicated servers, join real-time chat channels, and communicate with other members. Built with Django for backend logic and PostgreSQL for data persistence, the application features a containerized architecture using Docker for consistent development and deployment. The project demonstrates user authentication systems, database management, environment configuration, and production-ready implementation with Gunicorn and Whitenoise for static file serving.",
-    github: "https://github.com/nonsoTS/chatrooms-discord-clone",
-    liveLink: "https://chatrooms-sp7c.onrender.com",
+      "DiscussAI is an AI-powered chatroom platform where users can collaborate in real time and invoke an intelligent assistant by mentioning @ai in conversations.",
+    description: "DiscussAI is a full-stack AI-powered chatroom platform that blends real-time communication with an on-demand LLM assistant. Users can collaborate in dedicated chatrooms and trigger the AI assistant by mentioning @ai in their messages, enabling contextual responses directly within conversations. \n\nThe backend is built with Django and PostgreSQL, with Docker used to containerize the development and deployment environments for consistency and portability. The AI assistant is powered by the Hugging Face Inference API using Meta’s LLaMA-3.1 model, enabling natural language responses inside chat discussions. \n\nTo maintain efficient LLM interactions and manage token limits, the system implements an internal message summarization pipeline using facebook/bart-large-cnn, which condenses long conversation histories before sending context to the model. This ensures scalable AI interactions while keeping latency and costs under control. \n\nThe application includes secure authentication, persistent chat history, and a production-ready containerized setup deployed on Render. DiscussAI demonstrates practical integration of generative AI into real-time collaborative software, alongside backend system design, API orchestration, and containerized cloud deployment.",
+    github: "https://github.com/nonsoTS/DiscussAI",
+    liveLink: "https://discussai.onrender.com/",
     images: [
       "img/chatrooms/4.png",
       "img/chatrooms/1.png",

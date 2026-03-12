@@ -10,6 +10,21 @@ import ContactModal from "@/components/ContactModal";
 
 const experience = [
   {
+    startDate: "2026",
+    endDate: "PRESENT",
+    position: "Software Engineer Intern",
+    company: "Paga",
+    website: "https://www.mypaga.com/",
+    description:
+      "As a Software Engineer Intern at Paga, I work on backend systems and APIs that power secure digital payment infrastructure. Contributing to feature development, debugging, and improving the performance and reliability of fintech services. Collaborating with cross-functional teams to support scalable financial systems in production environments.",
+    skills: [
+      "Java",
+      "spring boot",
+      "spring",
+      "sql",
+    ],
+  },
+  {
     startDate: "2024",
     endDate: "APR 2025",
     position: "Software Engineer (Full-Stack)",
@@ -100,11 +115,11 @@ const AboutPage = () => {
                   Chinonso Udonne
                 </p>
                 <p className="text-lg lg:text-xl text-white/80 font-semibold font_bold">
-                  TypeScript Engineer
+                  Software Engineer
                 </p>
                 <p className="text-sm lg:text-base text-white/60 font_regular">
-                  TypeScript Engineer specializing in scalable cloud
-                  architectures and ML-powered applications.
+                  Software Engineer specializing in scalable cloud architectures
+                  and ML-powered applications.
                 </p>
               </div>
 
@@ -164,11 +179,20 @@ const AboutPage = () => {
               className="w-full space-y-6 lg:space-y-10 text-base lg:text-lg font_regular text-secondary"
             >
               <p>
-                I'm a TypeScript engineer specializing in cloud-native
+                I'm a Software Engineer specializing in cloud-native
                 architectures and AI-powered applications. I build production
-                systems using modern TypeScript, AWS infrastructure, and machine
-                learning capabilities to deliver scalable, performant solutions
-                that solve real business problems.
+                systems using modern Java, TypeScript, AWS infrastructure, and
+                machine learning capabilities to deliver scalable, performant
+                solutions that solve real business problems.
+              </p>
+
+              <p>
+                I currently work as a Software Engineer Intern at <b>Paga</b>,
+                where I contribute to building and improving fintech
+                infrastructure that powers secure digital payments for millions
+                of users. My work involves developing backend services,
+                improving system reliability, and supporting scalable financial
+                systems in production environments.
               </p>
 
               <p>
@@ -176,9 +200,8 @@ const AboutPage = () => {
                 architecting type-safe applications with React and Node.js, to
                 designing robust AWS cloud infrastructure, to integrating
                 generative AI features into production environments. I'm{" "}
-                <b>AWS: Generative AI Practitioner certified</b> and
-                actively work with MLOps patterns to bring AI capabilities to
-                scale.
+                <b>AWS: Generative AI Practitioner certified</b> and actively
+                work with MLOps patterns to bring AI capabilities to scale.
               </p>
 
               <p>
@@ -197,15 +220,6 @@ const AboutPage = () => {
                 systems. That drive to understand how things work at a
                 fundamental level continues to shape how I architect solutions
                 today.
-              </p>
-
-              <p>
-                I share insights from building these systems through technical
-                writing and open-source contributions, covering topics from
-                advanced TypeScript patterns to AWS architecture decisions to
-                practical MLOps implementations. I believe the best engineering
-                comes from combining technical depth with clear communication
-                and collaborative problem-solving.
               </p>
 
               <p>

@@ -43,11 +43,11 @@ const HomePage = () => {
                 CHINONSO UDONNE.
               </p>
               <p className="text-secondary font_regular text-base">
-                TypeScript Engineer <span className="text-special">|</span>{" "}
-                Cloud Architect <span className="text-special">|</span> MLOps
-                Specialist
-                <br />I build production systems that leverage modern
-                TypeScript, AWS infrastructure, and machine learning
+                Software Engineer <span className="text-special">|</span> AWS
+                Architect <span className="text-special">|</span> Gen AI
+                Integration
+                <br />I build production systems that leverage modern Java,
+                Typescript, AWS infrastructure, and machine learning
                 capabilities to solve complex engineering challenges.
               </p>
 
@@ -100,12 +100,12 @@ const HomePage = () => {
               </div>
               <div className="w-full lg:w-1/2 h-full">
                 <p className="text-white text-base lg:text-2xl font-semibold lg:font-normal font_regular">
-                  I'm a TypeScript engineer specializing in cloud-native
+                  I'm a Software engineer specializing in cloud-native
                   architectures and AI-powered applications.
                 </p>
 
                 <p className="text-secondary text-base font_regular my-4 lg:my-8">
-                  I build production systems using modern TypeScript, AWS
+                  I build production systems using modern Java, Typescript, AWS
                   infrastructure, and machine learning capabilities to deliver
                   scalable, performant solutions that solve real business
                   problems.
