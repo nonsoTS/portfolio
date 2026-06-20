@@ -139,6 +139,27 @@ export const projects = [
     ],
   },
   {
+    title: "Growth and Giggles Website",
+    availale: true,
+    projectType: "static",
+    role: "Full-stack engineer",
+    year: "2025",
+    excerpt:
+      "Creating the Growth and Giggles website was an expert use of AI tools to come up with a design for me to implement. This project highlighted my ability to deliver end-to-end web solutions efficiently.",
+    description:
+      "For Growth and Giggles, I used AI tools to come up with a design. This allowed me to move really fast and reduce costs drastically, which was beneficial for the client and for myself. This project combined technical expertise with practical implementation, ensuring a seamless transition from design to deployment.",
+    github: "",
+    liveLink: "https://growthandgiggles.io/",
+    images: [
+      "img/growthandgiggles/1.png",
+      "img/growthandgiggles/2.png",
+      "img/growthandgiggles/3.png",
+      "img/growthandgiggles/4.png",
+      "img/growthandgiggles/4.png",
+      "img/growthandgiggles/5.png",
+    ],
+  },
+  {
     title: "Josue Digital Website",
     availale: true,
     projectType: "static",
@@ -158,6 +179,43 @@ export const projects = [
     ],
   },
   {
+    title: "Funmi Modelling Portfolio",
+    availale: true,
+    projectType: "static",
+    role: "Frontend engineer",
+    year: "2026",
+    excerpt:
+      "Creating the Funmi Modelling Portfolio website was an expert use of AI tools to come up with a design for me to implement. This project highlighted my ability to deliver end-to-end web solutions efficiently.",
+    description:
+      "For Funmi Modelling Portfolio website, I used AI tools to come up with a design. This allowed me to move really fast and reduce costs drastically, which was beneficial for the client and for myself. This project combined technical expertise with practical implementation, ensuring a seamless transition from design to deployment.",
+    github: "",
+    liveLink: "https://funmi-talabi.netlify.app/",
+    images: [
+      "img/funmi/1.png",
+      "img/funmi/2.png",
+      "img/funmi/3.png",
+      "img/funmi/4.png"
+    ],
+  },
+  {
+    title: "Prynter Landing Page",
+    availale: true,
+    projectType: "static",
+    role: "Frontend engineer",
+    year: "2024",
+    excerpt:
+      "Built and deployed The Prynter's Landing Page using React, and Framer Motion, crafting a smooth and engaging user experience through carefully designed animations, transitions, and micro-interactions.",
+    description:
+      "The Prynter's Landing Page was developed from scratch using React, and Framer Motion, with a strong focus on creating a polished and immersive browsing experience. I implemented numerous subtle animations, easing effects, page transitions, and micro-interactions to make the interface feel fluid and responsive. The project provided an opportunity to explore modern frontend architecture, performance optimization, and motion design principles while delivering a production-ready website. I also managed the deployment and hosting setup, ensuring a seamless launch.",
+    github: "https://github.com/nonsoTS/apinke",
+    liveLink: "https://prynter.netlify.app/",
+    images: [
+      "img/prynter/1.png",
+      "img/prynter/2.png",
+      "img/prynter/3.png"
+    ],
+  },
+  {
     title: "Apinke Portfolio Website",
     availale: true,
     projectType: "static",
@@ -169,7 +227,6 @@ export const projects = [
       "I built The Apinke Afolabi's portfolio site from scratch using Astro, React and Framer Motion, leveraging the project as an opportunity to explore dynamic animations and interactive design. Beyond development, I also set up the hosting, ensuring a smooth deployment process.",
     github: "https://github.com/nonsoTS/apinke",
     liveLink: "https://ini-cms.netlify.app/",
-    // liveLink: "https://theapinkeafolabi.com/",
     images: [
       "img/apinke/1.png",
       "img/apinke/2.png",
@@ -200,26 +257,32 @@ export const projects = [
   },
 ];
 
+// https://app-eu1.hubspot.com/academy/achievements/6pw25yn1/en/1/chinonso-udonne/seo
+
 export const certifications = [
   {
-    link: "http://ude.my/UC-32b4306a-631d-45e4-bd54-97fba9fa3652",
-    img: "/img/certifications/udemy-aws.jpg",
+    link: "/img/certifications/hubspot-seo.png",
+    img: "/img/certifications/hubspot-seo.png",
   },
   {
-    link: "https://app-eu1.hubspot.com/academy/achievements/6pw25yn1/en/1/chinonso-udonne/seo",
-    img: "/img/certifications/hubspot-seo.png",
+    link: "https://www.coursera.org/account/accomplishments/certificate/BZNN6S2825JL",
+    img: "/img/certifications/coursera-python.png",
+  },
+  {
+    link: "https://www.coursera.org/account/accomplishments/certificate/ABKF8TSLDDFT",
+    img: "/img/certifications/coursera-backend.png",
+  },
+  {
+    link: "https://www.udacity.com/certificate/e/6fd8ddea-2a86-11f1-a916-8bf3a8e75804",
+    img: "/img/certifications/ai-practitioner-udacity.png",
   },
   {
     link: "https://www.credly.com/badges/8e2cff18-a89b-4a4f-8000-544dd51edca3/public_url",
     img: "/img/certifications/aws-gen-ai.png",
   },
   {
-    link: "https://www.coursera.org/account/accomplishments/certificate/BZNN6S2825JL",
-    img: "/img/certifications/coursera-python.png",
-  },
-  {
-    link: "https://www.coursera.org/account/accomplishments/certificate/ABKF8TSLDDFT",
-    img: "/img/certifications/coursera-backend.png",
+    link: "http://ude.my/UC-32b4306a-631d-45e4-bd54-97fba9fa3652",
+    img: "/img/certifications/udemy-aws.jpg",
   },
   {
     link: "/img/certifications/zuri-backend.jpg",
@@ -238,11 +301,7 @@ export const certifications = [
     img: "/img/certifications/fcc-python.png",
   },
   {
-    link: "http://ude.my/UC-32b4306a-631d-45e4-bd54-97fba9fa3652",
-    img: "/img/certifications/udemy-aws.jpg",
-  },
-  {
-    link: "https://app-eu1.hubspot.com/academy/achievements/6pw25yn1/en/1/chinonso-udonne/seo",
+    link: "/img/certifications/hubspot-seo.png",
     img: "/img/certifications/hubspot-seo.png",
   },
   {
@@ -254,6 +313,18 @@ export const certifications = [
     img: "/img/certifications/coursera-backend.png",
   },
   {
+    link: "https://www.udacity.com/certificate/e/6fd8ddea-2a86-11f1-a916-8bf3a8e75804",
+    img: "/img/certifications/ai-practitioner-udacity.png",
+  },
+  {
+    link: "https://www.credly.com/badges/8e2cff18-a89b-4a4f-8000-544dd51edca3/public_url",
+    img: "/img/certifications/aws-gen-ai.png",
+  },
+  {
+    link: "http://ude.my/UC-32b4306a-631d-45e4-bd54-97fba9fa3652",
+    img: "/img/certifications/udemy-aws.jpg",
+  },
+  {
     link: "/img/certifications/zuri-backend.jpg",
     img: "/img/certifications/zuri-backend.jpg",
   },
@@ -270,11 +341,7 @@ export const certifications = [
     img: "/img/certifications/fcc-python.png",
   },
   {
-    link: "http://ude.my/UC-32b4306a-631d-45e4-bd54-97fba9fa3652",
-    img: "/img/certifications/udemy-aws.jpg",
-  },
-  {
-    link: "https://app-eu1.hubspot.com/academy/achievements/6pw25yn1/en/1/chinonso-udonne/seo",
+    link: "/img/certifications/hubspot-seo.png",
     img: "/img/certifications/hubspot-seo.png",
   },
   {
@@ -286,6 +353,18 @@ export const certifications = [
     img: "/img/certifications/coursera-backend.png",
   },
   {
+    link: "https://www.udacity.com/certificate/e/6fd8ddea-2a86-11f1-a916-8bf3a8e75804",
+    img: "/img/certifications/ai-practitioner-udacity.png",
+  },
+  {
+    link: "https://www.credly.com/badges/8e2cff18-a89b-4a4f-8000-544dd51edca3/public_url",
+    img: "/img/certifications/aws-gen-ai.png",
+  },
+  {
+    link: "http://ude.my/UC-32b4306a-631d-45e4-bd54-97fba9fa3652",
+    img: "/img/certifications/udemy-aws.jpg",
+  },
+  {
     link: "/img/certifications/zuri-backend.jpg",
     img: "/img/certifications/zuri-backend.jpg",
   },
@@ -300,5 +379,5 @@ export const certifications = [
   {
     link: "https://www.freecodecamp.org/certification/r2_d2/scientific-computing-with-python-v7",
     img: "/img/certifications/fcc-python.png",
-  },
+  }
 ];

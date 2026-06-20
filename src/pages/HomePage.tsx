@@ -129,7 +129,7 @@ const HomePage = () => {
             <div className="slider w-full lg:w-4/5 !flex flex-row !items-center justify-stretch">
               <div className="slide-track !flex flex-row !items-center justify-between gap-x-10">
                 {certifications?.map((cert) => (
-                  <div className="slide">
+                  <div key={uuidGen()} className="slide">
                     <a href={cert?.link} target="_blank" rel="noopener">
                       <img
                         src={cert?.img}

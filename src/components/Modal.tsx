@@ -20,6 +20,8 @@ const Modal = ({ openModal, setOpenModal, currentProject }: any) => {
 
     async function checkSiteStatus(url: any) {
         try {
+            if(url === '') return;
+
           const response = await axios.get(url);
           if (response.status === 200) {
             console.log(`The site ${url} is up! Status code: ${response.status}`);
@@ -38,7 +40,7 @@ const Modal = ({ openModal, setOpenModal, currentProject }: any) => {
     }
 
     useEffect(() => {
-        checkSiteStatus('/studybud');
+        checkSiteStatus('');
     }, [])
 
   return (
